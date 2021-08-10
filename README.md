@@ -56,9 +56,10 @@ You may get to something like the following:
 	queue = []
 	addVertexToQueue(rootNode)
 		// queue = [rootNode]
+	
 	while(!queue.length == 0) {
 		let firstNode = queue.shift()
-	adjacentVertices = findAdjacent(firstNode)
+		adjacentVertices = findAdjacent(firstNode)
 		for vertex in adjacentVertices {
 			markDistanceAndPredecessor(vertex)
 			addToQueue(vertex)
